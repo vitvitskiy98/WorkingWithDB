@@ -42,6 +42,12 @@ namespace SqlAppVitvitskiy {
         
         private ModelPegasDataTable tableModelPegas;
         
+        private FreightElevChangedDataTable tableFreightElevChanged;
+        
+        private SmallElevChangedDataTable tableSmallElevChanged;
+        
+        private PegasChangedDataTable tablePegasChanged;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -96,6 +102,15 @@ namespace SqlAppVitvitskiy {
                 }
                 if ((ds.Tables["ModelPegas"] != null)) {
                     base.Tables.Add(new ModelPegasDataTable(ds.Tables["ModelPegas"]));
+                }
+                if ((ds.Tables["FreightElevChanged"] != null)) {
+                    base.Tables.Add(new FreightElevChangedDataTable(ds.Tables["FreightElevChanged"]));
+                }
+                if ((ds.Tables["SmallElevChanged"] != null)) {
+                    base.Tables.Add(new SmallElevChangedDataTable(ds.Tables["SmallElevChanged"]));
+                }
+                if ((ds.Tables["PegasChanged"] != null)) {
+                    base.Tables.Add(new PegasChangedDataTable(ds.Tables["PegasChanged"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -207,6 +222,36 @@ namespace SqlAppVitvitskiy {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public FreightElevChangedDataTable FreightElevChanged {
+            get {
+                return this.tableFreightElevChanged;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SmallElevChangedDataTable SmallElevChanged {
+            get {
+                return this.tableSmallElevChanged;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public PegasChangedDataTable PegasChanged {
+            get {
+                return this.tablePegasChanged;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -299,6 +344,15 @@ namespace SqlAppVitvitskiy {
                 if ((ds.Tables["ModelPegas"] != null)) {
                     base.Tables.Add(new ModelPegasDataTable(ds.Tables["ModelPegas"]));
                 }
+                if ((ds.Tables["FreightElevChanged"] != null)) {
+                    base.Tables.Add(new FreightElevChangedDataTable(ds.Tables["FreightElevChanged"]));
+                }
+                if ((ds.Tables["SmallElevChanged"] != null)) {
+                    base.Tables.Add(new SmallElevChangedDataTable(ds.Tables["SmallElevChanged"]));
+                }
+                if ((ds.Tables["PegasChanged"] != null)) {
+                    base.Tables.Add(new PegasChangedDataTable(ds.Tables["PegasChanged"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -386,6 +440,24 @@ namespace SqlAppVitvitskiy {
                     this.tableModelPegas.InitVars();
                 }
             }
+            this.tableFreightElevChanged = ((FreightElevChangedDataTable)(base.Tables["FreightElevChanged"]));
+            if ((initTable == true)) {
+                if ((this.tableFreightElevChanged != null)) {
+                    this.tableFreightElevChanged.InitVars();
+                }
+            }
+            this.tableSmallElevChanged = ((SmallElevChangedDataTable)(base.Tables["SmallElevChanged"]));
+            if ((initTable == true)) {
+                if ((this.tableSmallElevChanged != null)) {
+                    this.tableSmallElevChanged.InitVars();
+                }
+            }
+            this.tablePegasChanged = ((PegasChangedDataTable)(base.Tables["PegasChanged"]));
+            if ((initTable == true)) {
+                if ((this.tablePegasChanged != null)) {
+                    this.tablePegasChanged.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -414,6 +486,12 @@ namespace SqlAppVitvitskiy {
             base.Tables.Add(this.tableFreightElevators);
             this.tableModelPegas = new ModelPegasDataTable();
             base.Tables.Add(this.tableModelPegas);
+            this.tableFreightElevChanged = new FreightElevChangedDataTable();
+            base.Tables.Add(this.tableFreightElevChanged);
+            this.tableSmallElevChanged = new SmallElevChangedDataTable();
+            base.Tables.Add(this.tableSmallElevChanged);
+            this.tablePegasChanged = new PegasChangedDataTable();
+            base.Tables.Add(this.tablePegasChanged);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -467,6 +545,24 @@ namespace SqlAppVitvitskiy {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeModelPegas() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeFreightElevChanged() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeSmallElevChanged() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializePegasChanged() {
             return false;
         }
         
@@ -551,6 +647,15 @@ namespace SqlAppVitvitskiy {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void ModelPegasRowChangeEventHandler(object sender, ModelPegasRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void FreightElevChangedRowChangeEventHandler(object sender, FreightElevChangedRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void SmallElevChangedRowChangeEventHandler(object sender, SmallElevChangedRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void PegasChangedRowChangeEventHandler(object sender, PegasChangedRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4259,6 +4364,1914 @@ namespace SqlAppVitvitskiy {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class FreightElevChangedDataTable : global::System.Data.TypedTableBase<FreightElevChangedRow> {
+            
+            private global::System.Data.DataColumn columnfreightElevatorID_old;
+            
+            private global::System.Data.DataColumn columnfreightElevatorID_new;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_old;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_new;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_old;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_new;
+            
+            private global::System.Data.DataColumn columnСкорость_old;
+            
+            private global::System.Data.DataColumn columnСкорость_new;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_old;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_new;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_old;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_new;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_old;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_new;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_old;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_new;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_old;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_new;
+            
+            private global::System.Data.DataColumn columnПротивовес_old;
+            
+            private global::System.Data.DataColumn columnПротивовес_new;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_old;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_new;
+            
+            private global::System.Data.DataColumn columnМаксВысотаПодъема_old;
+            
+            private global::System.Data.DataColumn columnМаксВысотаПодъема_new;
+            
+            private global::System.Data.DataColumn columnОстановокКабины_old;
+            
+            private global::System.Data.DataColumn columnОстановокКабины_new;
+            
+            private global::System.Data.DataColumn columnДата_изменения;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedDataTable() {
+                this.TableName = "FreightElevChanged";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal FreightElevChangedDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected FreightElevChangedDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn freightElevatorID_oldColumn {
+                get {
+                    return this.columnfreightElevatorID_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn freightElevatorID_newColumn {
+                get {
+                    return this.columnfreightElevatorID_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_oldColumn {
+                get {
+                    return this.columnИндексЛифта_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_newColumn {
+                get {
+                    return this.columnИндексЛифта_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_oldColumn {
+                get {
+                    return this.columnГрузоподъемность_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_newColumn {
+                get {
+                    return this.columnГрузоподъемность_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_oldColumn {
+                get {
+                    return this.columnСкорость_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_newColumn {
+                get {
+                    return this.columnСкорость_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_oldColumn {
+                get {
+                    return this.columnШиринаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_newColumn {
+                get {
+                    return this.columnШиринаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_oldColumn {
+                get {
+                    return this.columnГлубинаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_newColumn {
+                get {
+                    return this.columnГлубинаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_oldColumn {
+                get {
+                    return this.columnВысотаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_newColumn {
+                get {
+                    return this.columnВысотаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_oldColumn {
+                get {
+                    return this.columnШиринаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_newColumn {
+                get {
+                    return this.columnШиринаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_oldColumn {
+                get {
+                    return this.columnГлубинаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_newColumn {
+                get {
+                    return this.columnГлубинаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_oldColumn {
+                get {
+                    return this.columnПротивовес_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_newColumn {
+                get {
+                    return this.columnПротивовес_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_oldColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_newColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn МаксВысотаПодъема_oldColumn {
+                get {
+                    return this.columnМаксВысотаПодъема_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn МаксВысотаПодъема_newColumn {
+                get {
+                    return this.columnМаксВысотаПодъема_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ОстановокКабины_oldColumn {
+                get {
+                    return this.columnОстановокКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ОстановокКабины_newColumn {
+                get {
+                    return this.columnОстановокКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Дата_измененияColumn {
+                get {
+                    return this.columnДата_изменения;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedRow this[int index] {
+                get {
+                    return ((FreightElevChangedRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event FreightElevChangedRowChangeEventHandler FreightElevChangedRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event FreightElevChangedRowChangeEventHandler FreightElevChangedRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event FreightElevChangedRowChangeEventHandler FreightElevChangedRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event FreightElevChangedRowChangeEventHandler FreightElevChangedRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddFreightElevChangedRow(FreightElevChangedRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedRow AddFreightElevChangedRow(
+                        int freightElevatorID_old, 
+                        int freightElevatorID_new, 
+                        string ИндексЛифта_old, 
+                        string ИндексЛифта_new, 
+                        int Грузоподъемность_old, 
+                        int Грузоподъемность_new, 
+                        double Скорость_old, 
+                        double Скорость_new, 
+                        double ШиринаКабины_old, 
+                        double ШиринаКабины_new, 
+                        double ГлубинаКабины_old, 
+                        double ГлубинаКабины_new, 
+                        double ВысотаКабины_old, 
+                        double ВысотаКабины_new, 
+                        double ШиринаШахты_old, 
+                        double ШиринаШахты_new, 
+                        double ГлубинаШахты_old, 
+                        double ГлубинаШахты_new, 
+                        string Противовес_old, 
+                        string Противовес_new, 
+                        string ШиринаПроемаДверей_old, 
+                        string ШиринаПроемаДверей_new, 
+                        double МаксВысотаПодъема_old, 
+                        double МаксВысотаПодъема_new, 
+                        int ОстановокКабины_old, 
+                        int ОстановокКабины_new, 
+                        System.DateTime Дата_изменения) {
+                FreightElevChangedRow rowFreightElevChangedRow = ((FreightElevChangedRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        freightElevatorID_old,
+                        freightElevatorID_new,
+                        ИндексЛифта_old,
+                        ИндексЛифта_new,
+                        Грузоподъемность_old,
+                        Грузоподъемность_new,
+                        Скорость_old,
+                        Скорость_new,
+                        ШиринаКабины_old,
+                        ШиринаКабины_new,
+                        ГлубинаКабины_old,
+                        ГлубинаКабины_new,
+                        ВысотаКабины_old,
+                        ВысотаКабины_new,
+                        ШиринаШахты_old,
+                        ШиринаШахты_new,
+                        ГлубинаШахты_old,
+                        ГлубинаШахты_new,
+                        Противовес_old,
+                        Противовес_new,
+                        ШиринаПроемаДверей_old,
+                        ШиринаПроемаДверей_new,
+                        МаксВысотаПодъема_old,
+                        МаксВысотаПодъема_new,
+                        ОстановокКабины_old,
+                        ОстановокКабины_new,
+                        Дата_изменения};
+                rowFreightElevChangedRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFreightElevChangedRow);
+                return rowFreightElevChangedRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                FreightElevChangedDataTable cln = ((FreightElevChangedDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new FreightElevChangedDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnfreightElevatorID_old = base.Columns["freightElevatorID_old"];
+                this.columnfreightElevatorID_new = base.Columns["freightElevatorID_new"];
+                this.columnИндексЛифта_old = base.Columns["ИндексЛифта_old"];
+                this.columnИндексЛифта_new = base.Columns["ИндексЛифта_new"];
+                this.columnГрузоподъемность_old = base.Columns["Грузоподъемность_old"];
+                this.columnГрузоподъемность_new = base.Columns["Грузоподъемность_new"];
+                this.columnСкорость_old = base.Columns["Скорость_old"];
+                this.columnСкорость_new = base.Columns["Скорость_new"];
+                this.columnШиринаКабины_old = base.Columns["ШиринаКабины_old"];
+                this.columnШиринаКабины_new = base.Columns["ШиринаКабины_new"];
+                this.columnГлубинаКабины_old = base.Columns["ГлубинаКабины_old"];
+                this.columnГлубинаКабины_new = base.Columns["ГлубинаКабины_new"];
+                this.columnВысотаКабины_old = base.Columns["ВысотаКабины_old"];
+                this.columnВысотаКабины_new = base.Columns["ВысотаКабины_new"];
+                this.columnШиринаШахты_old = base.Columns["ШиринаШахты_old"];
+                this.columnШиринаШахты_new = base.Columns["ШиринаШахты_new"];
+                this.columnГлубинаШахты_old = base.Columns["ГлубинаШахты_old"];
+                this.columnГлубинаШахты_new = base.Columns["ГлубинаШахты_new"];
+                this.columnПротивовес_old = base.Columns["Противовес_old"];
+                this.columnПротивовес_new = base.Columns["Противовес_new"];
+                this.columnШиринаПроемаДверей_old = base.Columns["ШиринаПроемаДверей_old"];
+                this.columnШиринаПроемаДверей_new = base.Columns["ШиринаПроемаДверей_new"];
+                this.columnМаксВысотаПодъема_old = base.Columns["МаксВысотаПодъема_old"];
+                this.columnМаксВысотаПодъема_new = base.Columns["МаксВысотаПодъема_new"];
+                this.columnОстановокКабины_old = base.Columns["ОстановокКабины_old"];
+                this.columnОстановокКабины_new = base.Columns["ОстановокКабины_new"];
+                this.columnДата_изменения = base.Columns["Дата_изменения"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnfreightElevatorID_old = new global::System.Data.DataColumn("freightElevatorID_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfreightElevatorID_old);
+                this.columnfreightElevatorID_new = new global::System.Data.DataColumn("freightElevatorID_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfreightElevatorID_new);
+                this.columnИндексЛифта_old = new global::System.Data.DataColumn("ИндексЛифта_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_old);
+                this.columnИндексЛифта_new = new global::System.Data.DataColumn("ИндексЛифта_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_new);
+                this.columnГрузоподъемность_old = new global::System.Data.DataColumn("Грузоподъемность_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_old);
+                this.columnГрузоподъемность_new = new global::System.Data.DataColumn("Грузоподъемность_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_new);
+                this.columnСкорость_old = new global::System.Data.DataColumn("Скорость_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_old);
+                this.columnСкорость_new = new global::System.Data.DataColumn("Скорость_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_new);
+                this.columnШиринаКабины_old = new global::System.Data.DataColumn("ШиринаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_old);
+                this.columnШиринаКабины_new = new global::System.Data.DataColumn("ШиринаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_new);
+                this.columnГлубинаКабины_old = new global::System.Data.DataColumn("ГлубинаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_old);
+                this.columnГлубинаКабины_new = new global::System.Data.DataColumn("ГлубинаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_new);
+                this.columnВысотаКабины_old = new global::System.Data.DataColumn("ВысотаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_old);
+                this.columnВысотаКабины_new = new global::System.Data.DataColumn("ВысотаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_new);
+                this.columnШиринаШахты_old = new global::System.Data.DataColumn("ШиринаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_old);
+                this.columnШиринаШахты_new = new global::System.Data.DataColumn("ШиринаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_new);
+                this.columnГлубинаШахты_old = new global::System.Data.DataColumn("ГлубинаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_old);
+                this.columnГлубинаШахты_new = new global::System.Data.DataColumn("ГлубинаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_new);
+                this.columnПротивовес_old = new global::System.Data.DataColumn("Противовес_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_old);
+                this.columnПротивовес_new = new global::System.Data.DataColumn("Противовес_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_new);
+                this.columnШиринаПроемаДверей_old = new global::System.Data.DataColumn("ШиринаПроемаДверей_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_old);
+                this.columnШиринаПроемаДверей_new = new global::System.Data.DataColumn("ШиринаПроемаДверей_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_new);
+                this.columnМаксВысотаПодъема_old = new global::System.Data.DataColumn("МаксВысотаПодъема_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnМаксВысотаПодъема_old);
+                this.columnМаксВысотаПодъема_new = new global::System.Data.DataColumn("МаксВысотаПодъема_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnМаксВысотаПодъема_new);
+                this.columnОстановокКабины_old = new global::System.Data.DataColumn("ОстановокКабины_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnОстановокКабины_old);
+                this.columnОстановокКабины_new = new global::System.Data.DataColumn("ОстановокКабины_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnОстановокКабины_new);
+                this.columnДата_изменения = new global::System.Data.DataColumn("Дата_изменения", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnДата_изменения);
+                this.columnfreightElevatorID_old.AllowDBNull = false;
+                this.columnfreightElevatorID_new.AllowDBNull = false;
+                this.columnИндексЛифта_old.MaxLength = 50;
+                this.columnИндексЛифта_new.MaxLength = 50;
+                this.columnПротивовес_old.MaxLength = 50;
+                this.columnПротивовес_new.MaxLength = 50;
+                this.columnШиринаПроемаДверей_old.MaxLength = 50;
+                this.columnШиринаПроемаДверей_new.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedRow NewFreightElevChangedRow() {
+                return ((FreightElevChangedRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new FreightElevChangedRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(FreightElevChangedRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.FreightElevChangedRowChanged != null)) {
+                    this.FreightElevChangedRowChanged(this, new FreightElevChangedRowChangeEvent(((FreightElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.FreightElevChangedRowChanging != null)) {
+                    this.FreightElevChangedRowChanging(this, new FreightElevChangedRowChangeEvent(((FreightElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.FreightElevChangedRowDeleted != null)) {
+                    this.FreightElevChangedRowDeleted(this, new FreightElevChangedRowChangeEvent(((FreightElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.FreightElevChangedRowDeleting != null)) {
+                    this.FreightElevChangedRowDeleting(this, new FreightElevChangedRowChangeEvent(((FreightElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveFreightElevChangedRow(FreightElevChangedRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                FactoryDBDataSet ds = new FactoryDBDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "FreightElevChangedDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SmallElevChangedDataTable : global::System.Data.TypedTableBase<SmallElevChangedRow> {
+            
+            private global::System.Data.DataColumn columnelevator_id_old;
+            
+            private global::System.Data.DataColumn columnelevator_id_new;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_old;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_new;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_old;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_new;
+            
+            private global::System.Data.DataColumn columnСкорость_old;
+            
+            private global::System.Data.DataColumn columnСкорость_new;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_old;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_new;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_old;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_new;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_old;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_new;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_old;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_new;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_old;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_new;
+            
+            private global::System.Data.DataColumn columnПротивовес_old;
+            
+            private global::System.Data.DataColumn columnПротивовес_new;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_old;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_new;
+            
+            private global::System.Data.DataColumn columnМаксВысотаПодъема_old;
+            
+            private global::System.Data.DataColumn columnМаксВысотаПодъема_new;
+            
+            private global::System.Data.DataColumn columnОстановокКабины_old;
+            
+            private global::System.Data.DataColumn columnОстановокКабины_new;
+            
+            private global::System.Data.DataColumn columnДата_изменения;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedDataTable() {
+                this.TableName = "SmallElevChanged";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal SmallElevChangedDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected SmallElevChangedDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn elevator_id_oldColumn {
+                get {
+                    return this.columnelevator_id_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn elevator_id_newColumn {
+                get {
+                    return this.columnelevator_id_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_oldColumn {
+                get {
+                    return this.columnИндексЛифта_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_newColumn {
+                get {
+                    return this.columnИндексЛифта_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_oldColumn {
+                get {
+                    return this.columnГрузоподъемность_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_newColumn {
+                get {
+                    return this.columnГрузоподъемность_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_oldColumn {
+                get {
+                    return this.columnСкорость_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_newColumn {
+                get {
+                    return this.columnСкорость_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_oldColumn {
+                get {
+                    return this.columnШиринаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_newColumn {
+                get {
+                    return this.columnШиринаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_oldColumn {
+                get {
+                    return this.columnГлубинаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_newColumn {
+                get {
+                    return this.columnГлубинаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_oldColumn {
+                get {
+                    return this.columnВысотаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_newColumn {
+                get {
+                    return this.columnВысотаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_oldColumn {
+                get {
+                    return this.columnШиринаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_newColumn {
+                get {
+                    return this.columnШиринаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_oldColumn {
+                get {
+                    return this.columnГлубинаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_newColumn {
+                get {
+                    return this.columnГлубинаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_oldColumn {
+                get {
+                    return this.columnПротивовес_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_newColumn {
+                get {
+                    return this.columnПротивовес_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_oldColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_newColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn МаксВысотаПодъема_oldColumn {
+                get {
+                    return this.columnМаксВысотаПодъема_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn МаксВысотаПодъема_newColumn {
+                get {
+                    return this.columnМаксВысотаПодъема_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ОстановокКабины_oldColumn {
+                get {
+                    return this.columnОстановокКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ОстановокКабины_newColumn {
+                get {
+                    return this.columnОстановокКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Дата_измененияColumn {
+                get {
+                    return this.columnДата_изменения;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedRow this[int index] {
+                get {
+                    return ((SmallElevChangedRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event SmallElevChangedRowChangeEventHandler SmallElevChangedRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event SmallElevChangedRowChangeEventHandler SmallElevChangedRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event SmallElevChangedRowChangeEventHandler SmallElevChangedRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event SmallElevChangedRowChangeEventHandler SmallElevChangedRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddSmallElevChangedRow(SmallElevChangedRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedRow AddSmallElevChangedRow(
+                        int elevator_id_old, 
+                        int elevator_id_new, 
+                        string ИндексЛифта_old, 
+                        string ИндексЛифта_new, 
+                        int Грузоподъемность_old, 
+                        int Грузоподъемность_new, 
+                        double Скорость_old, 
+                        double Скорость_new, 
+                        double ШиринаКабины_old, 
+                        double ШиринаКабины_new, 
+                        double ГлубинаКабины_old, 
+                        double ГлубинаКабины_new, 
+                        double ВысотаКабины_old, 
+                        double ВысотаКабины_new, 
+                        double ШиринаШахты_old, 
+                        double ШиринаШахты_new, 
+                        double ГлубинаШахты_old, 
+                        double ГлубинаШахты_new, 
+                        string Противовес_old, 
+                        string Противовес_new, 
+                        string ШиринаПроемаДверей_old, 
+                        string ШиринаПроемаДверей_new, 
+                        double МаксВысотаПодъема_old, 
+                        double МаксВысотаПодъема_new, 
+                        int ОстановокКабины_old, 
+                        int ОстановокКабины_new, 
+                        System.DateTime Дата_изменения) {
+                SmallElevChangedRow rowSmallElevChangedRow = ((SmallElevChangedRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        elevator_id_old,
+                        elevator_id_new,
+                        ИндексЛифта_old,
+                        ИндексЛифта_new,
+                        Грузоподъемность_old,
+                        Грузоподъемность_new,
+                        Скорость_old,
+                        Скорость_new,
+                        ШиринаКабины_old,
+                        ШиринаКабины_new,
+                        ГлубинаКабины_old,
+                        ГлубинаКабины_new,
+                        ВысотаКабины_old,
+                        ВысотаКабины_new,
+                        ШиринаШахты_old,
+                        ШиринаШахты_new,
+                        ГлубинаШахты_old,
+                        ГлубинаШахты_new,
+                        Противовес_old,
+                        Противовес_new,
+                        ШиринаПроемаДверей_old,
+                        ШиринаПроемаДверей_new,
+                        МаксВысотаПодъема_old,
+                        МаксВысотаПодъема_new,
+                        ОстановокКабины_old,
+                        ОстановокКабины_new,
+                        Дата_изменения};
+                rowSmallElevChangedRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSmallElevChangedRow);
+                return rowSmallElevChangedRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SmallElevChangedDataTable cln = ((SmallElevChangedDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SmallElevChangedDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnelevator_id_old = base.Columns["elevator_id_old"];
+                this.columnelevator_id_new = base.Columns["elevator_id_new"];
+                this.columnИндексЛифта_old = base.Columns["ИндексЛифта_old"];
+                this.columnИндексЛифта_new = base.Columns["ИндексЛифта_new"];
+                this.columnГрузоподъемность_old = base.Columns["Грузоподъемность_old"];
+                this.columnГрузоподъемность_new = base.Columns["Грузоподъемность_new"];
+                this.columnСкорость_old = base.Columns["Скорость_old"];
+                this.columnСкорость_new = base.Columns["Скорость_new"];
+                this.columnШиринаКабины_old = base.Columns["ШиринаКабины_old"];
+                this.columnШиринаКабины_new = base.Columns["ШиринаКабины_new"];
+                this.columnГлубинаКабины_old = base.Columns["ГлубинаКабины_old"];
+                this.columnГлубинаКабины_new = base.Columns["ГлубинаКабины_new"];
+                this.columnВысотаКабины_old = base.Columns["ВысотаКабины_old"];
+                this.columnВысотаКабины_new = base.Columns["ВысотаКабины_new"];
+                this.columnШиринаШахты_old = base.Columns["ШиринаШахты_old"];
+                this.columnШиринаШахты_new = base.Columns["ШиринаШахты_new"];
+                this.columnГлубинаШахты_old = base.Columns["ГлубинаШахты_old"];
+                this.columnГлубинаШахты_new = base.Columns["ГлубинаШахты_new"];
+                this.columnПротивовес_old = base.Columns["Противовес_old"];
+                this.columnПротивовес_new = base.Columns["Противовес_new"];
+                this.columnШиринаПроемаДверей_old = base.Columns["ШиринаПроемаДверей_old"];
+                this.columnШиринаПроемаДверей_new = base.Columns["ШиринаПроемаДверей_new"];
+                this.columnМаксВысотаПодъема_old = base.Columns["МаксВысотаПодъема_old"];
+                this.columnМаксВысотаПодъема_new = base.Columns["МаксВысотаПодъема_new"];
+                this.columnОстановокКабины_old = base.Columns["ОстановокКабины_old"];
+                this.columnОстановокКабины_new = base.Columns["ОстановокКабины_new"];
+                this.columnДата_изменения = base.Columns["Дата_изменения"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnelevator_id_old = new global::System.Data.DataColumn("elevator_id_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnelevator_id_old);
+                this.columnelevator_id_new = new global::System.Data.DataColumn("elevator_id_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnelevator_id_new);
+                this.columnИндексЛифта_old = new global::System.Data.DataColumn("ИндексЛифта_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_old);
+                this.columnИндексЛифта_new = new global::System.Data.DataColumn("ИндексЛифта_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_new);
+                this.columnГрузоподъемность_old = new global::System.Data.DataColumn("Грузоподъемность_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_old);
+                this.columnГрузоподъемность_new = new global::System.Data.DataColumn("Грузоподъемность_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_new);
+                this.columnСкорость_old = new global::System.Data.DataColumn("Скорость_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_old);
+                this.columnСкорость_new = new global::System.Data.DataColumn("Скорость_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_new);
+                this.columnШиринаКабины_old = new global::System.Data.DataColumn("ШиринаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_old);
+                this.columnШиринаКабины_new = new global::System.Data.DataColumn("ШиринаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_new);
+                this.columnГлубинаКабины_old = new global::System.Data.DataColumn("ГлубинаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_old);
+                this.columnГлубинаКабины_new = new global::System.Data.DataColumn("ГлубинаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_new);
+                this.columnВысотаКабины_old = new global::System.Data.DataColumn("ВысотаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_old);
+                this.columnВысотаКабины_new = new global::System.Data.DataColumn("ВысотаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_new);
+                this.columnШиринаШахты_old = new global::System.Data.DataColumn("ШиринаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_old);
+                this.columnШиринаШахты_new = new global::System.Data.DataColumn("ШиринаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_new);
+                this.columnГлубинаШахты_old = new global::System.Data.DataColumn("ГлубинаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_old);
+                this.columnГлубинаШахты_new = new global::System.Data.DataColumn("ГлубинаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_new);
+                this.columnПротивовес_old = new global::System.Data.DataColumn("Противовес_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_old);
+                this.columnПротивовес_new = new global::System.Data.DataColumn("Противовес_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_new);
+                this.columnШиринаПроемаДверей_old = new global::System.Data.DataColumn("ШиринаПроемаДверей_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_old);
+                this.columnШиринаПроемаДверей_new = new global::System.Data.DataColumn("ШиринаПроемаДверей_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_new);
+                this.columnМаксВысотаПодъема_old = new global::System.Data.DataColumn("МаксВысотаПодъема_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnМаксВысотаПодъема_old);
+                this.columnМаксВысотаПодъема_new = new global::System.Data.DataColumn("МаксВысотаПодъема_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnМаксВысотаПодъема_new);
+                this.columnОстановокКабины_old = new global::System.Data.DataColumn("ОстановокКабины_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnОстановокКабины_old);
+                this.columnОстановокКабины_new = new global::System.Data.DataColumn("ОстановокКабины_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnОстановокКабины_new);
+                this.columnДата_изменения = new global::System.Data.DataColumn("Дата_изменения", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnДата_изменения);
+                this.columnelevator_id_old.AllowDBNull = false;
+                this.columnelevator_id_new.AllowDBNull = false;
+                this.columnИндексЛифта_old.MaxLength = 50;
+                this.columnИндексЛифта_new.MaxLength = 50;
+                this.columnПротивовес_old.MaxLength = 50;
+                this.columnПротивовес_new.MaxLength = 50;
+                this.columnШиринаПроемаДверей_old.MaxLength = 50;
+                this.columnШиринаПроемаДверей_new.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedRow NewSmallElevChangedRow() {
+                return ((SmallElevChangedRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SmallElevChangedRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SmallElevChangedRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SmallElevChangedRowChanged != null)) {
+                    this.SmallElevChangedRowChanged(this, new SmallElevChangedRowChangeEvent(((SmallElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SmallElevChangedRowChanging != null)) {
+                    this.SmallElevChangedRowChanging(this, new SmallElevChangedRowChangeEvent(((SmallElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SmallElevChangedRowDeleted != null)) {
+                    this.SmallElevChangedRowDeleted(this, new SmallElevChangedRowChangeEvent(((SmallElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SmallElevChangedRowDeleting != null)) {
+                    this.SmallElevChangedRowDeleting(this, new SmallElevChangedRowChangeEvent(((SmallElevChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveSmallElevChangedRow(SmallElevChangedRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                FactoryDBDataSet ds = new FactoryDBDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SmallElevChangedDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class PegasChangedDataTable : global::System.Data.TypedTableBase<PegasChangedRow> {
+            
+            private global::System.Data.DataColumn columnPegas_id_old;
+            
+            private global::System.Data.DataColumn columnPegas_id_id_new;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_old;
+            
+            private global::System.Data.DataColumn columnИндексЛифта_new;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_old;
+            
+            private global::System.Data.DataColumn columnГрузоподъемность_new;
+            
+            private global::System.Data.DataColumn columnСкорость_old;
+            
+            private global::System.Data.DataColumn columnСкорость_new;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_old;
+            
+            private global::System.Data.DataColumn columnШиринаКабины_new;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_old;
+            
+            private global::System.Data.DataColumn columnГлубинаКабины_new;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_old;
+            
+            private global::System.Data.DataColumn columnВысотаКабины_new;
+            
+            private global::System.Data.DataColumn columnШтихмасКабины_old;
+            
+            private global::System.Data.DataColumn columnШтихмасКабины_new;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_old;
+            
+            private global::System.Data.DataColumn columnШиринаШахты_new;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_old;
+            
+            private global::System.Data.DataColumn columnГлубинаШахты_new;
+            
+            private global::System.Data.DataColumn columnПротивовес_old;
+            
+            private global::System.Data.DataColumn columnПротивовес_new;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_old;
+            
+            private global::System.Data.DataColumn columnШиринаПроемаДверей_new;
+            
+            private global::System.Data.DataColumn columnДата_изменения;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedDataTable() {
+                this.TableName = "PegasChanged";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal PegasChangedDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected PegasChangedDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Pegas_id_oldColumn {
+                get {
+                    return this.columnPegas_id_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Pegas_id_id_newColumn {
+                get {
+                    return this.columnPegas_id_id_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_oldColumn {
+                get {
+                    return this.columnИндексЛифта_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ИндексЛифта_newColumn {
+                get {
+                    return this.columnИндексЛифта_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_oldColumn {
+                get {
+                    return this.columnГрузоподъемность_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Грузоподъемность_newColumn {
+                get {
+                    return this.columnГрузоподъемность_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_oldColumn {
+                get {
+                    return this.columnСкорость_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Скорость_newColumn {
+                get {
+                    return this.columnСкорость_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_oldColumn {
+                get {
+                    return this.columnШиринаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаКабины_newColumn {
+                get {
+                    return this.columnШиринаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_oldColumn {
+                get {
+                    return this.columnГлубинаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаКабины_newColumn {
+                get {
+                    return this.columnГлубинаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_oldColumn {
+                get {
+                    return this.columnВысотаКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВысотаКабины_newColumn {
+                get {
+                    return this.columnВысотаКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШтихмасКабины_oldColumn {
+                get {
+                    return this.columnШтихмасКабины_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШтихмасКабины_newColumn {
+                get {
+                    return this.columnШтихмасКабины_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_oldColumn {
+                get {
+                    return this.columnШиринаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаШахты_newColumn {
+                get {
+                    return this.columnШиринаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_oldColumn {
+                get {
+                    return this.columnГлубинаШахты_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ГлубинаШахты_newColumn {
+                get {
+                    return this.columnГлубинаШахты_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_oldColumn {
+                get {
+                    return this.columnПротивовес_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Противовес_newColumn {
+                get {
+                    return this.columnПротивовес_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_oldColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_old;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ШиринаПроемаДверей_newColumn {
+                get {
+                    return this.columnШиринаПроемаДверей_new;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Дата_измененияColumn {
+                get {
+                    return this.columnДата_изменения;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedRow this[int index] {
+                get {
+                    return ((PegasChangedRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PegasChangedRowChangeEventHandler PegasChangedRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PegasChangedRowChangeEventHandler PegasChangedRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PegasChangedRowChangeEventHandler PegasChangedRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event PegasChangedRowChangeEventHandler PegasChangedRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddPegasChangedRow(PegasChangedRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedRow AddPegasChangedRow(
+                        int Pegas_id_old, 
+                        int Pegas_id_id_new, 
+                        string ИндексЛифта_old, 
+                        string ИндексЛифта_new, 
+                        int Грузоподъемность_old, 
+                        int Грузоподъемность_new, 
+                        string Скорость_old, 
+                        string Скорость_new, 
+                        double ШиринаКабины_old, 
+                        double ШиринаКабины_new, 
+                        double ГлубинаКабины_old, 
+                        double ГлубинаКабины_new, 
+                        double ВысотаКабины_old, 
+                        double ВысотаКабины_new, 
+                        double ШтихмасКабины_old, 
+                        double ШтихмасКабины_new, 
+                        double ШиринаШахты_old, 
+                        double ШиринаШахты_new, 
+                        double ГлубинаШахты_old, 
+                        double ГлубинаШахты_new, 
+                        string Противовес_old, 
+                        string Противовес_new, 
+                        double ШиринаПроемаДверей_old, 
+                        double ШиринаПроемаДверей_new, 
+                        System.DateTime Дата_изменения) {
+                PegasChangedRow rowPegasChangedRow = ((PegasChangedRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Pegas_id_old,
+                        Pegas_id_id_new,
+                        ИндексЛифта_old,
+                        ИндексЛифта_new,
+                        Грузоподъемность_old,
+                        Грузоподъемность_new,
+                        Скорость_old,
+                        Скорость_new,
+                        ШиринаКабины_old,
+                        ШиринаКабины_new,
+                        ГлубинаКабины_old,
+                        ГлубинаКабины_new,
+                        ВысотаКабины_old,
+                        ВысотаКабины_new,
+                        ШтихмасКабины_old,
+                        ШтихмасКабины_new,
+                        ШиринаШахты_old,
+                        ШиринаШахты_new,
+                        ГлубинаШахты_old,
+                        ГлубинаШахты_new,
+                        Противовес_old,
+                        Противовес_new,
+                        ШиринаПроемаДверей_old,
+                        ШиринаПроемаДверей_new,
+                        Дата_изменения};
+                rowPegasChangedRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPegasChangedRow);
+                return rowPegasChangedRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                PegasChangedDataTable cln = ((PegasChangedDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new PegasChangedDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnPegas_id_old = base.Columns["Pegas_id_old"];
+                this.columnPegas_id_id_new = base.Columns["Pegas_id_id_new"];
+                this.columnИндексЛифта_old = base.Columns["ИндексЛифта_old"];
+                this.columnИндексЛифта_new = base.Columns["ИндексЛифта_new"];
+                this.columnГрузоподъемность_old = base.Columns["Грузоподъемность_old"];
+                this.columnГрузоподъемность_new = base.Columns["Грузоподъемность_new"];
+                this.columnСкорость_old = base.Columns["Скорость_old"];
+                this.columnСкорость_new = base.Columns["Скорость_new"];
+                this.columnШиринаКабины_old = base.Columns["ШиринаКабины_old"];
+                this.columnШиринаКабины_new = base.Columns["ШиринаКабины_new"];
+                this.columnГлубинаКабины_old = base.Columns["ГлубинаКабины_old"];
+                this.columnГлубинаКабины_new = base.Columns["ГлубинаКабины_new"];
+                this.columnВысотаКабины_old = base.Columns["ВысотаКабины_old"];
+                this.columnВысотаКабины_new = base.Columns["ВысотаКабины_new"];
+                this.columnШтихмасКабины_old = base.Columns["ШтихмасКабины_old"];
+                this.columnШтихмасКабины_new = base.Columns["ШтихмасКабины_new"];
+                this.columnШиринаШахты_old = base.Columns["ШиринаШахты_old"];
+                this.columnШиринаШахты_new = base.Columns["ШиринаШахты_new"];
+                this.columnГлубинаШахты_old = base.Columns["ГлубинаШахты_old"];
+                this.columnГлубинаШахты_new = base.Columns["ГлубинаШахты_new"];
+                this.columnПротивовес_old = base.Columns["Противовес_old"];
+                this.columnПротивовес_new = base.Columns["Противовес_new"];
+                this.columnШиринаПроемаДверей_old = base.Columns["ШиринаПроемаДверей_old"];
+                this.columnШиринаПроемаДверей_new = base.Columns["ШиринаПроемаДверей_new"];
+                this.columnДата_изменения = base.Columns["Дата_изменения"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnPegas_id_old = new global::System.Data.DataColumn("Pegas_id_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPegas_id_old);
+                this.columnPegas_id_id_new = new global::System.Data.DataColumn("Pegas_id_id_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPegas_id_id_new);
+                this.columnИндексЛифта_old = new global::System.Data.DataColumn("ИндексЛифта_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_old);
+                this.columnИндексЛифта_new = new global::System.Data.DataColumn("ИндексЛифта_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnИндексЛифта_new);
+                this.columnГрузоподъемность_old = new global::System.Data.DataColumn("Грузоподъемность_old", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_old);
+                this.columnГрузоподъемность_new = new global::System.Data.DataColumn("Грузоподъемность_new", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГрузоподъемность_new);
+                this.columnСкорость_old = new global::System.Data.DataColumn("Скорость_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_old);
+                this.columnСкорость_new = new global::System.Data.DataColumn("Скорость_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnСкорость_new);
+                this.columnШиринаКабины_old = new global::System.Data.DataColumn("ШиринаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_old);
+                this.columnШиринаКабины_new = new global::System.Data.DataColumn("ШиринаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаКабины_new);
+                this.columnГлубинаКабины_old = new global::System.Data.DataColumn("ГлубинаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_old);
+                this.columnГлубинаКабины_new = new global::System.Data.DataColumn("ГлубинаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаКабины_new);
+                this.columnВысотаКабины_old = new global::System.Data.DataColumn("ВысотаКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_old);
+                this.columnВысотаКабины_new = new global::System.Data.DataColumn("ВысотаКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВысотаКабины_new);
+                this.columnШтихмасКабины_old = new global::System.Data.DataColumn("ШтихмасКабины_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШтихмасКабины_old);
+                this.columnШтихмасКабины_new = new global::System.Data.DataColumn("ШтихмасКабины_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШтихмасКабины_new);
+                this.columnШиринаШахты_old = new global::System.Data.DataColumn("ШиринаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_old);
+                this.columnШиринаШахты_new = new global::System.Data.DataColumn("ШиринаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаШахты_new);
+                this.columnГлубинаШахты_old = new global::System.Data.DataColumn("ГлубинаШахты_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_old);
+                this.columnГлубинаШахты_new = new global::System.Data.DataColumn("ГлубинаШахты_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnГлубинаШахты_new);
+                this.columnПротивовес_old = new global::System.Data.DataColumn("Противовес_old", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_old);
+                this.columnПротивовес_new = new global::System.Data.DataColumn("Противовес_new", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПротивовес_new);
+                this.columnШиринаПроемаДверей_old = new global::System.Data.DataColumn("ШиринаПроемаДверей_old", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_old);
+                this.columnШиринаПроемаДверей_new = new global::System.Data.DataColumn("ШиринаПроемаДверей_new", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnШиринаПроемаДверей_new);
+                this.columnДата_изменения = new global::System.Data.DataColumn("Дата_изменения", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnДата_изменения);
+                this.columnPegas_id_old.AllowDBNull = false;
+                this.columnPegas_id_id_new.AllowDBNull = false;
+                this.columnИндексЛифта_old.MaxLength = 50;
+                this.columnИндексЛифта_new.MaxLength = 50;
+                this.columnСкорость_old.MaxLength = 50;
+                this.columnСкорость_new.MaxLength = 50;
+                this.columnПротивовес_old.MaxLength = 50;
+                this.columnПротивовес_new.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedRow NewPegasChangedRow() {
+                return ((PegasChangedRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new PegasChangedRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(PegasChangedRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.PegasChangedRowChanged != null)) {
+                    this.PegasChangedRowChanged(this, new PegasChangedRowChangeEvent(((PegasChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.PegasChangedRowChanging != null)) {
+                    this.PegasChangedRowChanging(this, new PegasChangedRowChangeEvent(((PegasChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.PegasChangedRowDeleted != null)) {
+                    this.PegasChangedRowDeleted(this, new PegasChangedRowChangeEvent(((PegasChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.PegasChangedRowDeleting != null)) {
+                    this.PegasChangedRowDeleting(this, new PegasChangedRowChangeEvent(((PegasChangedRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemovePegasChangedRow(PegasChangedRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                FactoryDBDataSet ds = new FactoryDBDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "PegasChangedDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class ГрузовойЛифтRow : global::System.Data.DataRow {
@@ -7157,6 +9170,2208 @@ namespace SqlAppVitvitskiy {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class FreightElevChangedRow : global::System.Data.DataRow {
+            
+            private FreightElevChangedDataTable tableFreightElevChanged;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal FreightElevChangedRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableFreightElevChanged = ((FreightElevChangedDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int freightElevatorID_old {
+                get {
+                    return ((int)(this[this.tableFreightElevChanged.freightElevatorID_oldColumn]));
+                }
+                set {
+                    this[this.tableFreightElevChanged.freightElevatorID_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int freightElevatorID_new {
+                get {
+                    return ((int)(this[this.tableFreightElevChanged.freightElevatorID_newColumn]));
+                }
+                set {
+                    this[this.tableFreightElevChanged.freightElevatorID_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.ИндексЛифта_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_old\' в таблице \'FreightElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ИндексЛифта_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.ИндексЛифта_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_new\' в таблице \'FreightElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ИндексЛифта_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_old {
+                get {
+                    try {
+                        return ((int)(this[this.tableFreightElevChanged.Грузоподъемность_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_old\' в таблице \'FreightElevChanged\' равно " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Грузоподъемность_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_new {
+                get {
+                    try {
+                        return ((int)(this[this.tableFreightElevChanged.Грузоподъемность_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_new\' в таблице \'FreightElevChanged\' равно " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Грузоподъемность_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double Скорость_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.Скорость_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_old\' в таблице \'FreightElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Скорость_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double Скорость_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.Скорость_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_new\' в таблице \'FreightElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Скорость_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ШиринаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_old\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ШиринаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_new\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ГлубинаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_old\' в таблице \'FreightElevChanged\' равно DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ГлубинаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ГлубинаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_new\' в таблице \'FreightElevChanged\' равно DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ГлубинаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ВысотаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_old\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ВысотаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ВысотаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_new\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ВысотаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ШиринаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_old\' в таблице \'FreightElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ШиринаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_new\' в таблице \'FreightElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ГлубинаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_old\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ГлубинаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.ГлубинаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_new\' в таблице \'FreightElevChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ГлубинаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.Противовес_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_old\' в таблице \'FreightElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Противовес_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.Противовес_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_new\' в таблице \'FreightElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Противовес_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ШиринаПроемаДверей_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.ШиринаПроемаДверей_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_old\' в таблице \'FreightElevChanged\' равн" +
+                                "о DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаПроемаДверей_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ШиринаПроемаДверей_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableFreightElevChanged.ШиринаПроемаДверей_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_new\' в таблице \'FreightElevChanged\' равн" +
+                                "о DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ШиринаПроемаДверей_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double МаксВысотаПодъема_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.МаксВысотаПодъема_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'МаксВысотаПодъема_old\' в таблице \'FreightElevChanged\' равно" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.МаксВысотаПодъема_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double МаксВысотаПодъема_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableFreightElevChanged.МаксВысотаПодъема_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'МаксВысотаПодъема_new\' в таблице \'FreightElevChanged\' равно" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.МаксВысотаПодъема_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ОстановокКабины_old {
+                get {
+                    try {
+                        return ((int)(this[this.tableFreightElevChanged.ОстановокКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ОстановокКабины_old\' в таблице \'FreightElevChanged\' равно D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ОстановокКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ОстановокКабины_new {
+                get {
+                    try {
+                        return ((int)(this[this.tableFreightElevChanged.ОстановокКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ОстановокКабины_new\' в таблице \'FreightElevChanged\' равно D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.ОстановокКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime Дата_изменения {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableFreightElevChanged.Дата_измененияColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата_изменения\' в таблице \'FreightElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableFreightElevChanged.Дата_измененияColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ИндексЛифта_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_oldNull() {
+                this[this.tableFreightElevChanged.ИндексЛифта_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ИндексЛифта_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_newNull() {
+                this[this.tableFreightElevChanged.ИндексЛифта_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.Грузоподъемность_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_oldNull() {
+                this[this.tableFreightElevChanged.Грузоподъемность_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.Грузоподъемность_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_newNull() {
+                this[this.tableFreightElevChanged.Грузоподъемность_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.Скорость_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_oldNull() {
+                this[this.tableFreightElevChanged.Скорость_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.Скорость_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_newNull() {
+                this[this.tableFreightElevChanged.Скорость_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_oldNull() {
+                this[this.tableFreightElevChanged.ШиринаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_newNull() {
+                this[this.tableFreightElevChanged.ШиринаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ГлубинаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_oldNull() {
+                this[this.tableFreightElevChanged.ГлубинаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ГлубинаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_newNull() {
+                this[this.tableFreightElevChanged.ГлубинаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ВысотаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_oldNull() {
+                this[this.tableFreightElevChanged.ВысотаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ВысотаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_newNull() {
+                this[this.tableFreightElevChanged.ВысотаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_oldNull() {
+                this[this.tableFreightElevChanged.ШиринаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_newNull() {
+                this[this.tableFreightElevChanged.ШиринаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ГлубинаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_oldNull() {
+                this[this.tableFreightElevChanged.ГлубинаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ГлубинаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_newNull() {
+                this[this.tableFreightElevChanged.ГлубинаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.Противовес_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_oldNull() {
+                this[this.tableFreightElevChanged.Противовес_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.Противовес_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_newNull() {
+                this[this.tableFreightElevChanged.Противовес_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаПроемаДверей_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_oldNull() {
+                this[this.tableFreightElevChanged.ШиринаПроемаДверей_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ШиринаПроемаДверей_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_newNull() {
+                this[this.tableFreightElevChanged.ШиринаПроемаДверей_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsМаксВысотаПодъема_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.МаксВысотаПодъема_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetМаксВысотаПодъема_oldNull() {
+                this[this.tableFreightElevChanged.МаксВысотаПодъема_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsМаксВысотаПодъема_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.МаксВысотаПодъема_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetМаксВысотаПодъема_newNull() {
+                this[this.tableFreightElevChanged.МаксВысотаПодъема_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsОстановокКабины_oldNull() {
+                return this.IsNull(this.tableFreightElevChanged.ОстановокКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetОстановокКабины_oldNull() {
+                this[this.tableFreightElevChanged.ОстановокКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsОстановокКабины_newNull() {
+                return this.IsNull(this.tableFreightElevChanged.ОстановокКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetОстановокКабины_newNull() {
+                this[this.tableFreightElevChanged.ОстановокКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsДата_измененияNull() {
+                return this.IsNull(this.tableFreightElevChanged.Дата_измененияColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetДата_измененияNull() {
+                this[this.tableFreightElevChanged.Дата_измененияColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SmallElevChangedRow : global::System.Data.DataRow {
+            
+            private SmallElevChangedDataTable tableSmallElevChanged;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal SmallElevChangedRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSmallElevChanged = ((SmallElevChangedDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int elevator_id_old {
+                get {
+                    return ((int)(this[this.tableSmallElevChanged.elevator_id_oldColumn]));
+                }
+                set {
+                    this[this.tableSmallElevChanged.elevator_id_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int elevator_id_new {
+                get {
+                    return ((int)(this[this.tableSmallElevChanged.elevator_id_newColumn]));
+                }
+                set {
+                    this[this.tableSmallElevChanged.elevator_id_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.ИндексЛифта_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_old\' в таблице \'SmallElevChanged\' равно DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ИндексЛифта_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.ИндексЛифта_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_new\' в таблице \'SmallElevChanged\' равно DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ИндексЛифта_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_old {
+                get {
+                    try {
+                        return ((int)(this[this.tableSmallElevChanged.Грузоподъемность_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_old\' в таблице \'SmallElevChanged\' равно DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Грузоподъемность_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_new {
+                get {
+                    try {
+                        return ((int)(this[this.tableSmallElevChanged.Грузоподъемность_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_new\' в таблице \'SmallElevChanged\' равно DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Грузоподъемность_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double Скорость_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.Скорость_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_old\' в таблице \'SmallElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Скорость_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double Скорость_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.Скорость_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_new\' в таблице \'SmallElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Скорость_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ШиринаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_old\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ШиринаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_new\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ГлубинаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_old\' в таблице \'SmallElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ГлубинаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ГлубинаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_new\' в таблице \'SmallElevChanged\' равно DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ГлубинаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ВысотаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_old\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ВысотаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ВысотаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_new\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ВысотаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ШиринаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_old\' в таблице \'SmallElevChanged\' равно DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ШиринаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_new\' в таблице \'SmallElevChanged\' равно DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ГлубинаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_old\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ГлубинаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.ГлубинаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_new\' в таблице \'SmallElevChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ГлубинаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.Противовес_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_old\' в таблице \'SmallElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Противовес_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.Противовес_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_new\' в таблице \'SmallElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Противовес_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ШиринаПроемаДверей_old {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.ШиринаПроемаДверей_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_old\' в таблице \'SmallElevChanged\' равно " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаПроемаДверей_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ШиринаПроемаДверей_new {
+                get {
+                    try {
+                        return ((string)(this[this.tableSmallElevChanged.ШиринаПроемаДверей_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_new\' в таблице \'SmallElevChanged\' равно " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ШиринаПроемаДверей_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double МаксВысотаПодъема_old {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.МаксВысотаПодъема_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'МаксВысотаПодъема_old\' в таблице \'SmallElevChanged\' равно D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.МаксВысотаПодъема_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double МаксВысотаПодъема_new {
+                get {
+                    try {
+                        return ((double)(this[this.tableSmallElevChanged.МаксВысотаПодъема_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'МаксВысотаПодъема_new\' в таблице \'SmallElevChanged\' равно D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.МаксВысотаПодъема_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ОстановокКабины_old {
+                get {
+                    try {
+                        return ((int)(this[this.tableSmallElevChanged.ОстановокКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ОстановокКабины_old\' в таблице \'SmallElevChanged\' равно DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ОстановокКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ОстановокКабины_new {
+                get {
+                    try {
+                        return ((int)(this[this.tableSmallElevChanged.ОстановокКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ОстановокКабины_new\' в таблице \'SmallElevChanged\' равно DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.ОстановокКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime Дата_изменения {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableSmallElevChanged.Дата_измененияColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата_изменения\' в таблице \'SmallElevChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSmallElevChanged.Дата_измененияColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ИндексЛифта_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_oldNull() {
+                this[this.tableSmallElevChanged.ИндексЛифта_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ИндексЛифта_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_newNull() {
+                this[this.tableSmallElevChanged.ИндексЛифта_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.Грузоподъемность_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_oldNull() {
+                this[this.tableSmallElevChanged.Грузоподъемность_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.Грузоподъемность_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_newNull() {
+                this[this.tableSmallElevChanged.Грузоподъемность_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.Скорость_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_oldNull() {
+                this[this.tableSmallElevChanged.Скорость_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.Скорость_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_newNull() {
+                this[this.tableSmallElevChanged.Скорость_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_oldNull() {
+                this[this.tableSmallElevChanged.ШиринаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_newNull() {
+                this[this.tableSmallElevChanged.ШиринаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ГлубинаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_oldNull() {
+                this[this.tableSmallElevChanged.ГлубинаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ГлубинаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_newNull() {
+                this[this.tableSmallElevChanged.ГлубинаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ВысотаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_oldNull() {
+                this[this.tableSmallElevChanged.ВысотаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ВысотаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_newNull() {
+                this[this.tableSmallElevChanged.ВысотаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_oldNull() {
+                this[this.tableSmallElevChanged.ШиринаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_newNull() {
+                this[this.tableSmallElevChanged.ШиринаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ГлубинаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_oldNull() {
+                this[this.tableSmallElevChanged.ГлубинаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ГлубинаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_newNull() {
+                this[this.tableSmallElevChanged.ГлубинаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.Противовес_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_oldNull() {
+                this[this.tableSmallElevChanged.Противовес_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.Противовес_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_newNull() {
+                this[this.tableSmallElevChanged.Противовес_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаПроемаДверей_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_oldNull() {
+                this[this.tableSmallElevChanged.ШиринаПроемаДверей_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ШиринаПроемаДверей_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_newNull() {
+                this[this.tableSmallElevChanged.ШиринаПроемаДверей_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsМаксВысотаПодъема_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.МаксВысотаПодъема_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetМаксВысотаПодъема_oldNull() {
+                this[this.tableSmallElevChanged.МаксВысотаПодъема_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsМаксВысотаПодъема_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.МаксВысотаПодъема_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetМаксВысотаПодъема_newNull() {
+                this[this.tableSmallElevChanged.МаксВысотаПодъема_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsОстановокКабины_oldNull() {
+                return this.IsNull(this.tableSmallElevChanged.ОстановокКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetОстановокКабины_oldNull() {
+                this[this.tableSmallElevChanged.ОстановокКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsОстановокКабины_newNull() {
+                return this.IsNull(this.tableSmallElevChanged.ОстановокКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetОстановокКабины_newNull() {
+                this[this.tableSmallElevChanged.ОстановокКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsДата_измененияNull() {
+                return this.IsNull(this.tableSmallElevChanged.Дата_измененияColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetДата_измененияNull() {
+                this[this.tableSmallElevChanged.Дата_измененияColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class PegasChangedRow : global::System.Data.DataRow {
+            
+            private PegasChangedDataTable tablePegasChanged;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal PegasChangedRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablePegasChanged = ((PegasChangedDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Pegas_id_old {
+                get {
+                    return ((int)(this[this.tablePegasChanged.Pegas_id_oldColumn]));
+                }
+                set {
+                    this[this.tablePegasChanged.Pegas_id_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Pegas_id_id_new {
+                get {
+                    return ((int)(this[this.tablePegasChanged.Pegas_id_id_newColumn]));
+                }
+                set {
+                    this[this.tablePegasChanged.Pegas_id_id_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_old {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.ИндексЛифта_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ИндексЛифта_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ИндексЛифта_new {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.ИндексЛифта_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ИндексЛифта_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ИндексЛифта_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_old {
+                get {
+                    try {
+                        return ((int)(this[this.tablePegasChanged.Грузоподъемность_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_old\' в таблице \'PegasChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Грузоподъемность_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Грузоподъемность_new {
+                get {
+                    try {
+                        return ((int)(this[this.tablePegasChanged.Грузоподъемность_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Грузоподъемность_new\' в таблице \'PegasChanged\' равно DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Грузоподъемность_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Скорость_old {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.Скорость_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Скорость_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Скорость_new {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.Скорость_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Скорость_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Скорость_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаКабины_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ГлубинаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ГлубинаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ГлубинаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаКабины_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ГлубинаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ВысотаКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ВысотаКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ВысотаКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ВысотаКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ВысотаКабины_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ВысотаКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШтихмасКабины_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШтихмасКабины_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШтихмасКабины_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШтихмасКабины_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШтихмасКабины_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШтихмасКабины_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШтихмасКабины_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШтихмасКабины_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаШахты_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ГлубинаШахты_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ГлубинаШахты_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ГлубинаШахты_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ГлубинаШахты_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ГлубинаШахты_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ГлубинаШахты_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_old {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.Противовес_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_old\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Противовес_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Противовес_new {
+                get {
+                    try {
+                        return ((string)(this[this.tablePegasChanged.Противовес_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Противовес_new\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Противовес_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаПроемаДверей_old {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаПроемаДверей_oldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_old\' в таблице \'PegasChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаПроемаДверей_oldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double ШиринаПроемаДверей_new {
+                get {
+                    try {
+                        return ((double)(this[this.tablePegasChanged.ШиринаПроемаДверей_newColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ШиринаПроемаДверей_new\' в таблице \'PegasChanged\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.ШиринаПроемаДверей_newColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime Дата_изменения {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePegasChanged.Дата_измененияColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата_изменения\' в таблице \'PegasChanged\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePegasChanged.Дата_измененияColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ИндексЛифта_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_oldNull() {
+                this[this.tablePegasChanged.ИндексЛифта_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsИндексЛифта_newNull() {
+                return this.IsNull(this.tablePegasChanged.ИндексЛифта_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetИндексЛифта_newNull() {
+                this[this.tablePegasChanged.ИндексЛифта_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_oldNull() {
+                return this.IsNull(this.tablePegasChanged.Грузоподъемность_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_oldNull() {
+                this[this.tablePegasChanged.Грузоподъемность_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГрузоподъемность_newNull() {
+                return this.IsNull(this.tablePegasChanged.Грузоподъемность_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГрузоподъемность_newNull() {
+                this[this.tablePegasChanged.Грузоподъемность_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_oldNull() {
+                return this.IsNull(this.tablePegasChanged.Скорость_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_oldNull() {
+                this[this.tablePegasChanged.Скорость_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsСкорость_newNull() {
+                return this.IsNull(this.tablePegasChanged.Скорость_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetСкорость_newNull() {
+                this[this.tablePegasChanged.Скорость_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_oldNull() {
+                this[this.tablePegasChanged.ШиринаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаКабины_newNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаКабины_newNull() {
+                this[this.tablePegasChanged.ШиринаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ГлубинаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_oldNull() {
+                this[this.tablePegasChanged.ГлубинаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаКабины_newNull() {
+                return this.IsNull(this.tablePegasChanged.ГлубинаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаКабины_newNull() {
+                this[this.tablePegasChanged.ГлубинаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ВысотаКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_oldNull() {
+                this[this.tablePegasChanged.ВысотаКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВысотаКабины_newNull() {
+                return this.IsNull(this.tablePegasChanged.ВысотаКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВысотаКабины_newNull() {
+                this[this.tablePegasChanged.ВысотаКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШтихмасКабины_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ШтихмасКабины_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШтихмасКабины_oldNull() {
+                this[this.tablePegasChanged.ШтихмасКабины_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШтихмасКабины_newNull() {
+                return this.IsNull(this.tablePegasChanged.ШтихмасКабины_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШтихмасКабины_newNull() {
+                this[this.tablePegasChanged.ШтихмасКабины_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_oldNull() {
+                this[this.tablePegasChanged.ШиринаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаШахты_newNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаШахты_newNull() {
+                this[this.tablePegasChanged.ШиринаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ГлубинаШахты_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_oldNull() {
+                this[this.tablePegasChanged.ГлубинаШахты_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsГлубинаШахты_newNull() {
+                return this.IsNull(this.tablePegasChanged.ГлубинаШахты_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetГлубинаШахты_newNull() {
+                this[this.tablePegasChanged.ГлубинаШахты_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_oldNull() {
+                return this.IsNull(this.tablePegasChanged.Противовес_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_oldNull() {
+                this[this.tablePegasChanged.Противовес_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsПротивовес_newNull() {
+                return this.IsNull(this.tablePegasChanged.Противовес_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetПротивовес_newNull() {
+                this[this.tablePegasChanged.Противовес_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_oldNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаПроемаДверей_oldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_oldNull() {
+                this[this.tablePegasChanged.ШиринаПроемаДверей_oldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsШиринаПроемаДверей_newNull() {
+                return this.IsNull(this.tablePegasChanged.ШиринаПроемаДверей_newColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetШиринаПроемаДверей_newNull() {
+                this[this.tablePegasChanged.ШиринаПроемаДверей_newColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsДата_измененияNull() {
+                return this.IsNull(this.tablePegasChanged.Дата_измененияColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetДата_измененияNull() {
+                this[this.tablePegasChanged.Дата_измененияColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -7448,6 +11663,108 @@ namespace SqlAppVitvitskiy {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public ModelPegasRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class FreightElevChangedRowChangeEvent : global::System.EventArgs {
+            
+            private FreightElevChangedRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedRowChangeEvent(FreightElevChangedRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public FreightElevChangedRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class SmallElevChangedRowChangeEvent : global::System.EventArgs {
+            
+            private SmallElevChangedRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedRowChangeEvent(SmallElevChangedRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public SmallElevChangedRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class PegasChangedRowChangeEvent : global::System.EventArgs {
+            
+            private PegasChangedRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedRowChangeEvent(PegasChangedRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public PegasChangedRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -12821,6 +17138,1347 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class FreightElevChangedTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public FreightElevChangedTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "FreightElevChanged";
+            tableMapping.ColumnMappings.Add("freightElevatorID_old", "freightElevatorID_old");
+            tableMapping.ColumnMappings.Add("freightElevatorID_new", "freightElevatorID_new");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_old", "ИндексЛифта_old");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_new", "ИндексЛифта_new");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_old", "Грузоподъемность_old");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_new", "Грузоподъемность_new");
+            tableMapping.ColumnMappings.Add("Скорость_old", "Скорость_old");
+            tableMapping.ColumnMappings.Add("Скорость_new", "Скорость_new");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_old", "ШиринаКабины_old");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_new", "ШиринаКабины_new");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_old", "ГлубинаКабины_old");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_new", "ГлубинаКабины_new");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_old", "ВысотаКабины_old");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_new", "ВысотаКабины_new");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_old", "ШиринаШахты_old");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_new", "ШиринаШахты_new");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_old", "ГлубинаШахты_old");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_new", "ГлубинаШахты_new");
+            tableMapping.ColumnMappings.Add("Противовес_old", "Противовес_old");
+            tableMapping.ColumnMappings.Add("Противовес_new", "Противовес_new");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_old", "ШиринаПроемаДверей_old");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_new", "ШиринаПроемаДверей_new");
+            tableMapping.ColumnMappings.Add("МаксВысотаПодъема_old", "МаксВысотаПодъема_old");
+            tableMapping.ColumnMappings.Add("МаксВысотаПодъема_new", "МаксВысотаПодъема_new");
+            tableMapping.ColumnMappings.Add("ОстановокКабины_old", "ОстановокКабины_old");
+            tableMapping.ColumnMappings.Add("ОстановокКабины_new", "ОстановокКабины_new");
+            tableMapping.ColumnMappings.Add("Дата_изменения", "Дата_изменения");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[FreightElevChanged] ([freightElevatorID_old], [freightElevatorID_new], [ИндексЛифта_old], [ИндексЛифта_new], [Грузоподъемность_old], [Грузоподъемность_new], [Скорость_old], [Скорость_new], [ШиринаКабины_old], [ШиринаКабины_new], [ГлубинаКабины_old], [ГлубинаКабины_new], [ВысотаКабины_old], [ВысотаКабины_new], [ШиринаШахты_old], [ШиринаШахты_new], [ГлубинаШахты_old], [ГлубинаШахты_new], [Противовес_old], [Противовес_new], [ШиринаПроемаДверей_old], [ШиринаПроемаДверей_new], [МаксВысотаПодъема_old], [МаксВысотаПодъема_new], [ОстановокКабины_old], [ОстановокКабины_new], [Дата_изменения]) VALUES (@freightElevatorID_old, @freightElevatorID_new, @ИндексЛифта_old, @ИндексЛифта_new, @Грузоподъемность_old, @Грузоподъемность_new, @Скорость_old, @Скорость_new, @ШиринаКабины_old, @ШиринаКабины_new, @ГлубинаКабины_old, @ГлубинаКабины_new, @ВысотаКабины_old, @ВысотаКабины_new, @ШиринаШахты_old, @ШиринаШахты_new, @ГлубинаШахты_old, @ГлубинаШахты_new, @Противовес_old, @Противовес_new, @ШиринаПроемаДверей_old, @ШиринаПроемаДверей_new, @МаксВысотаПодъема_old, @МаксВысотаПодъема_new, @ОстановокКабины_old, @ОстановокКабины_new, @Дата_изменения)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@freightElevatorID_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "freightElevatorID_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@freightElevatorID_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "freightElevatorID_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@МаксВысотаПодъема_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "МаксВысотаПодъема_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@МаксВысотаПодъема_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "МаксВысотаПодъема_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ОстановокКабины_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ОстановокКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ОстановокКабины_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ОстановокКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Дата_изменения", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_изменения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::SqlAppVitvitskiy.Properties.Settings.Default.FactoryDBConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT freightElevatorID_old, freightElevatorID_new, ИндексЛифта_old, ИндексЛифта_new, Грузоподъемность_old, Грузоподъемность_new, Скорость_old, Скорость_new, ШиринаКабины_old, ШиринаКабины_new, ГлубинаКабины_old, ГлубинаКабины_new, ВысотаКабины_old, ВысотаКабины_new, ШиринаШахты_old, ШиринаШахты_new, ГлубинаШахты_old, ГлубинаШахты_new, Противовес_old, Противовес_new, ШиринаПроемаДверей_old, ШиринаПроемаДверей_new, МаксВысотаПодъема_old, МаксВысотаПодъема_new, ОстановокКабины_old, ОстановокКабины_new, Дата_изменения FROM dbo.FreightElevChanged";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(FactoryDBDataSet.FreightElevChangedDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual FactoryDBDataSet.FreightElevChangedDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            FactoryDBDataSet.FreightElevChangedDataTable dataTable = new FactoryDBDataSet.FreightElevChangedDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet.FreightElevChangedDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "FreightElevChanged");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(
+                    int freightElevatorID_old, 
+                    int freightElevatorID_new, 
+                    string ИндексЛифта_old, 
+                    string ИндексЛифта_new, 
+                    global::System.Nullable<int> Грузоподъемность_old, 
+                    global::System.Nullable<int> Грузоподъемность_new, 
+                    global::System.Nullable<double> Скорость_old, 
+                    global::System.Nullable<double> Скорость_new, 
+                    global::System.Nullable<double> ШиринаКабины_old, 
+                    global::System.Nullable<double> ШиринаКабины_new, 
+                    global::System.Nullable<double> ГлубинаКабины_old, 
+                    global::System.Nullable<double> ГлубинаКабины_new, 
+                    global::System.Nullable<double> ВысотаКабины_old, 
+                    global::System.Nullable<double> ВысотаКабины_new, 
+                    global::System.Nullable<double> ШиринаШахты_old, 
+                    global::System.Nullable<double> ШиринаШахты_new, 
+                    global::System.Nullable<double> ГлубинаШахты_old, 
+                    global::System.Nullable<double> ГлубинаШахты_new, 
+                    string Противовес_old, 
+                    string Противовес_new, 
+                    string ШиринаПроемаДверей_old, 
+                    string ШиринаПроемаДверей_new, 
+                    global::System.Nullable<double> МаксВысотаПодъема_old, 
+                    global::System.Nullable<double> МаксВысотаПодъема_new, 
+                    global::System.Nullable<int> ОстановокКабины_old, 
+                    global::System.Nullable<int> ОстановокКабины_new, 
+                    global::System.Nullable<global::System.DateTime> Дата_изменения) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(freightElevatorID_old));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(freightElevatorID_new));
+            if ((ИндексЛифта_old == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ИндексЛифта_old));
+            }
+            if ((ИндексЛифта_new == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ИндексЛифта_new));
+            }
+            if ((Грузоподъемность_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Грузоподъемность_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Грузоподъемность_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(Грузоподъемность_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Скорость_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((double)(Скорость_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Скорость_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((double)(Скорость_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((double)(ШиринаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((double)(ШиринаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((double)(ГлубинаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((double)(ГлубинаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((double)(ВысотаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((double)(ВысотаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((double)(ШиринаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((double)(ШиринаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((double)(ГлубинаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[17].Value = ((double)(ГлубинаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((Противовес_old == null)) {
+                this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(Противовес_old));
+            }
+            if ((Противовес_new == null)) {
+                this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(Противовес_new));
+            }
+            if ((ШиринаПроемаДверей_old == null)) {
+                this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ШиринаПроемаДверей_old));
+            }
+            if ((ШиринаПроемаДверей_new == null)) {
+                this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ШиринаПроемаДверей_new));
+            }
+            if ((МаксВысотаПодъема_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[22].Value = ((double)(МаксВысотаПодъема_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((МаксВысотаПодъема_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[23].Value = ((double)(МаксВысотаПодъема_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((ОстановокКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[24].Value = ((int)(ОстановокКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((ОстановокКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[25].Value = ((int)(ОстановокКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            if ((Дата_изменения.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[26].Value = ((System.DateTime)(Дата_изменения.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SmallElevChangedTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public SmallElevChangedTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SmallElevChanged";
+            tableMapping.ColumnMappings.Add("elevator_id_old", "elevator_id_old");
+            tableMapping.ColumnMappings.Add("elevator_id_new", "elevator_id_new");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_old", "ИндексЛифта_old");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_new", "ИндексЛифта_new");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_old", "Грузоподъемность_old");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_new", "Грузоподъемность_new");
+            tableMapping.ColumnMappings.Add("Скорость_old", "Скорость_old");
+            tableMapping.ColumnMappings.Add("Скорость_new", "Скорость_new");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_old", "ШиринаКабины_old");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_new", "ШиринаКабины_new");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_old", "ГлубинаКабины_old");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_new", "ГлубинаКабины_new");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_old", "ВысотаКабины_old");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_new", "ВысотаКабины_new");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_old", "ШиринаШахты_old");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_new", "ШиринаШахты_new");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_old", "ГлубинаШахты_old");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_new", "ГлубинаШахты_new");
+            tableMapping.ColumnMappings.Add("Противовес_old", "Противовес_old");
+            tableMapping.ColumnMappings.Add("Противовес_new", "Противовес_new");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_old", "ШиринаПроемаДверей_old");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_new", "ШиринаПроемаДверей_new");
+            tableMapping.ColumnMappings.Add("МаксВысотаПодъема_old", "МаксВысотаПодъема_old");
+            tableMapping.ColumnMappings.Add("МаксВысотаПодъема_new", "МаксВысотаПодъема_new");
+            tableMapping.ColumnMappings.Add("ОстановокКабины_old", "ОстановокКабины_old");
+            tableMapping.ColumnMappings.Add("ОстановокКабины_new", "ОстановокКабины_new");
+            tableMapping.ColumnMappings.Add("Дата_изменения", "Дата_изменения");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[SmallElevChanged] ([elevator_id_old], [elevator_id_new], [ИндексЛифта_old], [ИндексЛифта_new], [Грузоподъемность_old], [Грузоподъемность_new], [Скорость_old], [Скорость_new], [ШиринаКабины_old], [ШиринаКабины_new], [ГлубинаКабины_old], [ГлубинаКабины_new], [ВысотаКабины_old], [ВысотаКабины_new], [ШиринаШахты_old], [ШиринаШахты_new], [ГлубинаШахты_old], [ГлубинаШахты_new], [Противовес_old], [Противовес_new], [ШиринаПроемаДверей_old], [ШиринаПроемаДверей_new], [МаксВысотаПодъема_old], [МаксВысотаПодъема_new], [ОстановокКабины_old], [ОстановокКабины_new], [Дата_изменения]) VALUES (@elevator_id_old, @elevator_id_new, @ИндексЛифта_old, @ИндексЛифта_new, @Грузоподъемность_old, @Грузоподъемность_new, @Скорость_old, @Скорость_new, @ШиринаКабины_old, @ШиринаКабины_new, @ГлубинаКабины_old, @ГлубинаКабины_new, @ВысотаКабины_old, @ВысотаКабины_new, @ШиринаШахты_old, @ШиринаШахты_new, @ГлубинаШахты_old, @ГлубинаШахты_new, @Противовес_old, @Противовес_new, @ШиринаПроемаДверей_old, @ШиринаПроемаДверей_new, @МаксВысотаПодъема_old, @МаксВысотаПодъема_new, @ОстановокКабины_old, @ОстановокКабины_new, @Дата_изменения)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@elevator_id_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "elevator_id_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@elevator_id_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "elevator_id_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@МаксВысотаПодъема_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "МаксВысотаПодъема_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@МаксВысотаПодъема_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "МаксВысотаПодъема_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ОстановокКабины_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ОстановокКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ОстановокКабины_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ОстановокКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Дата_изменения", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_изменения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::SqlAppVitvitskiy.Properties.Settings.Default.FactoryDBConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT elevator_id_old, elevator_id_new, ИндексЛифта_old, ИндексЛифта_new, Грузоподъемность_old, Грузоподъемность_new, Скорость_old, Скорость_new, ШиринаКабины_old, ШиринаКабины_new, ГлубинаКабины_old, ГлубинаКабины_new, ВысотаКабины_old, ВысотаКабины_new, ШиринаШахты_old, ШиринаШахты_new, ГлубинаШахты_old, ГлубинаШахты_new, Противовес_old, Противовес_new, ШиринаПроемаДверей_old, ШиринаПроемаДверей_new, МаксВысотаПодъема_old, МаксВысотаПодъема_new, ОстановокКабины_old, ОстановокКабины_new, Дата_изменения FROM dbo.SmallElevChanged";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(FactoryDBDataSet.SmallElevChangedDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual FactoryDBDataSet.SmallElevChangedDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            FactoryDBDataSet.SmallElevChangedDataTable dataTable = new FactoryDBDataSet.SmallElevChangedDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet.SmallElevChangedDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "SmallElevChanged");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(
+                    int elevator_id_old, 
+                    int elevator_id_new, 
+                    string ИндексЛифта_old, 
+                    string ИндексЛифта_new, 
+                    global::System.Nullable<int> Грузоподъемность_old, 
+                    global::System.Nullable<int> Грузоподъемность_new, 
+                    global::System.Nullable<double> Скорость_old, 
+                    global::System.Nullable<double> Скорость_new, 
+                    global::System.Nullable<double> ШиринаКабины_old, 
+                    global::System.Nullable<double> ШиринаКабины_new, 
+                    global::System.Nullable<double> ГлубинаКабины_old, 
+                    global::System.Nullable<double> ГлубинаКабины_new, 
+                    global::System.Nullable<double> ВысотаКабины_old, 
+                    global::System.Nullable<double> ВысотаКабины_new, 
+                    global::System.Nullable<double> ШиринаШахты_old, 
+                    global::System.Nullable<double> ШиринаШахты_new, 
+                    global::System.Nullable<double> ГлубинаШахты_old, 
+                    global::System.Nullable<double> ГлубинаШахты_new, 
+                    string Противовес_old, 
+                    string Противовес_new, 
+                    string ШиринаПроемаДверей_old, 
+                    string ШиринаПроемаДверей_new, 
+                    global::System.Nullable<double> МаксВысотаПодъема_old, 
+                    global::System.Nullable<double> МаксВысотаПодъема_new, 
+                    global::System.Nullable<int> ОстановокКабины_old, 
+                    global::System.Nullable<int> ОстановокКабины_new, 
+                    global::System.Nullable<global::System.DateTime> Дата_изменения) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(elevator_id_old));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(elevator_id_new));
+            if ((ИндексЛифта_old == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ИндексЛифта_old));
+            }
+            if ((ИндексЛифта_new == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ИндексЛифта_new));
+            }
+            if ((Грузоподъемность_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Грузоподъемность_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Грузоподъемность_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(Грузоподъемность_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Скорость_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((double)(Скорость_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Скорость_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((double)(Скорость_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((double)(ШиринаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((double)(ШиринаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((double)(ГлубинаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((double)(ГлубинаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((double)(ВысотаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((double)(ВысотаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((double)(ШиринаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((double)(ШиринаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((double)(ГлубинаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[17].Value = ((double)(ГлубинаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((Противовес_old == null)) {
+                this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(Противовес_old));
+            }
+            if ((Противовес_new == null)) {
+                this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(Противовес_new));
+            }
+            if ((ШиринаПроемаДверей_old == null)) {
+                this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(ШиринаПроемаДверей_old));
+            }
+            if ((ШиринаПроемаДверей_new == null)) {
+                this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(ШиринаПроемаДверей_new));
+            }
+            if ((МаксВысотаПодъема_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[22].Value = ((double)(МаксВысотаПодъема_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((МаксВысотаПодъема_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[23].Value = ((double)(МаксВысотаПодъема_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((ОстановокКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[24].Value = ((int)(ОстановокКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((ОстановокКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[25].Value = ((int)(ОстановокКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            if ((Дата_изменения.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[26].Value = ((System.DateTime)(Дата_изменения.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class PegasChangedTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public PegasChangedTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "PegasChanged";
+            tableMapping.ColumnMappings.Add("Pegas_id_old", "Pegas_id_old");
+            tableMapping.ColumnMappings.Add("Pegas_id_id_new", "Pegas_id_id_new");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_old", "ИндексЛифта_old");
+            tableMapping.ColumnMappings.Add("ИндексЛифта_new", "ИндексЛифта_new");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_old", "Грузоподъемность_old");
+            tableMapping.ColumnMappings.Add("Грузоподъемность_new", "Грузоподъемность_new");
+            tableMapping.ColumnMappings.Add("Скорость_old", "Скорость_old");
+            tableMapping.ColumnMappings.Add("Скорость_new", "Скорость_new");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_old", "ШиринаКабины_old");
+            tableMapping.ColumnMappings.Add("ШиринаКабины_new", "ШиринаКабины_new");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_old", "ГлубинаКабины_old");
+            tableMapping.ColumnMappings.Add("ГлубинаКабины_new", "ГлубинаКабины_new");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_old", "ВысотаКабины_old");
+            tableMapping.ColumnMappings.Add("ВысотаКабины_new", "ВысотаКабины_new");
+            tableMapping.ColumnMappings.Add("ШтихмасКабины_old", "ШтихмасКабины_old");
+            tableMapping.ColumnMappings.Add("ШтихмасКабины_new", "ШтихмасКабины_new");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_old", "ШиринаШахты_old");
+            tableMapping.ColumnMappings.Add("ШиринаШахты_new", "ШиринаШахты_new");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_old", "ГлубинаШахты_old");
+            tableMapping.ColumnMappings.Add("ГлубинаШахты_new", "ГлубинаШахты_new");
+            tableMapping.ColumnMappings.Add("Противовес_old", "Противовес_old");
+            tableMapping.ColumnMappings.Add("Противовес_new", "Противовес_new");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_old", "ШиринаПроемаДверей_old");
+            tableMapping.ColumnMappings.Add("ШиринаПроемаДверей_new", "ШиринаПроемаДверей_new");
+            tableMapping.ColumnMappings.Add("Дата_изменения", "Дата_изменения");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[PegasChanged] ([Pegas_id_old], [Pegas_id_id_new], [ИндексЛифта_old], [ИндексЛифта_new], [Грузоподъемность_old], [Грузоподъемность_new], [Скорость_old], [Скорость_new], [ШиринаКабины_old], [ШиринаКабины_new], [ГлубинаКабины_old], [ГлубинаКабины_new], [ВысотаКабины_old], [ВысотаКабины_new], [ШтихмасКабины_old], [ШтихмасКабины_new], [ШиринаШахты_old], [ШиринаШахты_new], [ГлубинаШахты_old], [ГлубинаШахты_new], [Противовес_old], [Противовес_new], [ШиринаПроемаДверей_old], [ШиринаПроемаДверей_new], [Дата_изменения]) VALUES (@Pegas_id_old, @Pegas_id_id_new, @ИндексЛифта_old, @ИндексЛифта_new, @Грузоподъемность_old, @Грузоподъемность_new, @Скорость_old, @Скорость_new, @ШиринаКабины_old, @ШиринаКабины_new, @ГлубинаКабины_old, @ГлубинаКабины_new, @ВысотаКабины_old, @ВысотаКабины_new, @ШтихмасКабины_old, @ШтихмасКабины_new, @ШиринаШахты_old, @ШиринаШахты_new, @ГлубинаШахты_old, @ГлубинаШахты_new, @Противовес_old, @Противовес_new, @ШиринаПроемаДверей_old, @ШиринаПроемаДверей_new, @Дата_изменения)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pegas_id_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pegas_id_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pegas_id_id_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pegas_id_id_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ИндексЛифта_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ИндексЛифта_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_old", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Грузоподъемность_new", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Грузоподъемность_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Скорость_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Скорость_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ВысотаКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ВысотаКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШтихмасКабины_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШтихмасКабины_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШтихмасКабины_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШтихмасКабины_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ГлубинаШахты_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ГлубинаШахты_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_old", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Противовес_new", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Противовес_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_old", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_old", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ШиринаПроемаДверей_new", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ШиринаПроемаДверей_new", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Дата_изменения", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Дата_изменения", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::SqlAppVitvitskiy.Properties.Settings.Default.FactoryDBConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT Pegas_id_old, Pegas_id_id_new, ИндексЛифта_old, ИндексЛифта_new, Грузоподъемность_old, Грузоподъемность_new, Скорость_old, Скорость_new, ШиринаКабины_old, ШиринаКабины_new, ГлубинаКабины_old, ГлубинаКабины_new, ВысотаКабины_old, ВысотаКабины_new, ШтихмасКабины_old, ШтихмасКабины_new, ШиринаШахты_old, ШиринаШахты_new, ГлубинаШахты_old, ГлубинаШахты_new, Противовес_old, Противовес_new, ШиринаПроемаДверей_old, ШиринаПроемаДверей_new, Дата_изменения FROM dbo.PegasChanged";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(FactoryDBDataSet.PegasChangedDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual FactoryDBDataSet.PegasChangedDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            FactoryDBDataSet.PegasChangedDataTable dataTable = new FactoryDBDataSet.PegasChangedDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet.PegasChangedDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(FactoryDBDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "PegasChanged");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(
+                    int Pegas_id_old, 
+                    int Pegas_id_id_new, 
+                    string ИндексЛифта_old, 
+                    string ИндексЛифта_new, 
+                    global::System.Nullable<int> Грузоподъемность_old, 
+                    global::System.Nullable<int> Грузоподъемность_new, 
+                    string Скорость_old, 
+                    string Скорость_new, 
+                    global::System.Nullable<double> ШиринаКабины_old, 
+                    global::System.Nullable<double> ШиринаКабины_new, 
+                    global::System.Nullable<double> ГлубинаКабины_old, 
+                    global::System.Nullable<double> ГлубинаКабины_new, 
+                    global::System.Nullable<double> ВысотаКабины_old, 
+                    global::System.Nullable<double> ВысотаКабины_new, 
+                    global::System.Nullable<double> ШтихмасКабины_old, 
+                    global::System.Nullable<double> ШтихмасКабины_new, 
+                    global::System.Nullable<double> ШиринаШахты_old, 
+                    global::System.Nullable<double> ШиринаШахты_new, 
+                    global::System.Nullable<double> ГлубинаШахты_old, 
+                    global::System.Nullable<double> ГлубинаШахты_new, 
+                    string Противовес_old, 
+                    string Противовес_new, 
+                    global::System.Nullable<double> ШиринаПроемаДверей_old, 
+                    global::System.Nullable<double> ШиринаПроемаДверей_new, 
+                    global::System.Nullable<global::System.DateTime> Дата_изменения) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Pegas_id_old));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Pegas_id_id_new));
+            if ((ИндексЛифта_old == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(ИндексЛифта_old));
+            }
+            if ((ИндексЛифта_new == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ИндексЛифта_new));
+            }
+            if ((Грузоподъемность_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Грузоподъемность_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Грузоподъемность_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(Грузоподъемность_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Скорость_old == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Скорость_old));
+            }
+            if ((Скорость_new == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Скорость_new));
+            }
+            if ((ШиринаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((double)(ШиринаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((double)(ШиринаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((double)(ГлубинаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((double)(ГлубинаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((double)(ВысотаКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((ВысотаКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((double)(ВысотаКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((ШтихмасКабины_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((double)(ШтихмасКабины_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ШтихмасКабины_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((double)(ШтихмасКабины_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((double)(ШиринаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[17].Value = ((double)(ШиринаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[18].Value = ((double)(ГлубинаШахты_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((ГлубинаШахты_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[19].Value = ((double)(ГлубинаШахты_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((Противовес_old == null)) {
+                this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(Противовес_old));
+            }
+            if ((Противовес_new == null)) {
+                this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[21].Value = ((string)(Противовес_new));
+            }
+            if ((ШиринаПроемаДверей_old.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[22].Value = ((double)(ШиринаПроемаДверей_old.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((ШиринаПроемаДверей_new.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[23].Value = ((double)(ШиринаПроемаДверей_new.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((Дата_изменения.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[24].Value = ((System.DateTime)(Дата_изменения.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12845,6 +18503,12 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
         private МалыйГрузовойЛифтИмпортTableAdapter _малыйГрузовойЛифтИмпортTableAdapter;
         
         private МодельныйРядПегасTableAdapter _модельныйРядПегасTableAdapter;
+        
+        private FreightElevChangedTableAdapter _freightElevChangedTableAdapter;
+        
+        private SmallElevChangedTableAdapter _smallElevChangedTableAdapter;
+        
+        private PegasChangedTableAdapter _pegasChangedTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -12961,6 +18625,48 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public FreightElevChangedTableAdapter FreightElevChangedTableAdapter {
+            get {
+                return this._freightElevChangedTableAdapter;
+            }
+            set {
+                this._freightElevChangedTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public SmallElevChangedTableAdapter SmallElevChangedTableAdapter {
+            get {
+                return this._smallElevChangedTableAdapter;
+            }
+            set {
+                this._smallElevChangedTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public PegasChangedTableAdapter PegasChangedTableAdapter {
+            get {
+                return this._pegasChangedTableAdapter;
+            }
+            set {
+                this._pegasChangedTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -13006,6 +18712,18 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                             && (this._модельныйРядПегасTableAdapter.Connection != null))) {
                     return this._модельныйРядПегасTableAdapter.Connection;
                 }
+                if (((this._freightElevChangedTableAdapter != null) 
+                            && (this._freightElevChangedTableAdapter.Connection != null))) {
+                    return this._freightElevChangedTableAdapter.Connection;
+                }
+                if (((this._smallElevChangedTableAdapter != null) 
+                            && (this._smallElevChangedTableAdapter.Connection != null))) {
+                    return this._smallElevChangedTableAdapter.Connection;
+                }
+                if (((this._pegasChangedTableAdapter != null) 
+                            && (this._pegasChangedTableAdapter.Connection != null))) {
+                    return this._pegasChangedTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -13038,6 +18756,15 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                     count = (count + 1);
                 }
                 if ((this._модельныйРядПегасTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._freightElevChangedTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._smallElevChangedTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._pegasChangedTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -13114,6 +18841,33 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._freightElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.FreightElevChanged.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._freightElevChangedTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._smallElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.SmallElevChanged.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._smallElevChangedTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._pegasChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.PegasChanged.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._pegasChangedTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -13180,6 +18934,30 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._freightElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.FreightElevChanged.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._freightElevChangedTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._smallElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.SmallElevChanged.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._smallElevChangedTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._pegasChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.PegasChanged.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._pegasChangedTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -13190,6 +18968,30 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(FactoryDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._pegasChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.PegasChanged.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._pegasChangedTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._smallElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.SmallElevChanged.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._smallElevChangedTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._freightElevChangedTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.FreightElevChanged.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._freightElevChangedTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._модельныйРядПегасTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.МодельныйРядПегас.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -13320,6 +19122,21 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                 throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
                         "r, должны использовать одинаковую строку подключения.");
             }
+            if (((this._freightElevChangedTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._freightElevChangedTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
+                        "r, должны использовать одинаковую строку подключения.");
+            }
+            if (((this._smallElevChangedTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._smallElevChangedTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
+                        "r, должны использовать одинаковую строку подключения.");
+            }
+            if (((this._pegasChangedTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._pegasChangedTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
+                        "r, должны использовать одинаковую строку подключения.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager не содержит сведений о подключении. Укажите для каждого адапт" +
@@ -13415,6 +19232,33 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                         adaptersWithAcceptChangesDuringUpdate.Add(this._модельныйРядПегасTableAdapter.Adapter);
                     }
                 }
+                if ((this._freightElevChangedTableAdapter != null)) {
+                    revertConnections.Add(this._freightElevChangedTableAdapter, this._freightElevChangedTableAdapter.Connection);
+                    this._freightElevChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._freightElevChangedTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._freightElevChangedTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._freightElevChangedTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._freightElevChangedTableAdapter.Adapter);
+                    }
+                }
+                if ((this._smallElevChangedTableAdapter != null)) {
+                    revertConnections.Add(this._smallElevChangedTableAdapter, this._smallElevChangedTableAdapter.Connection);
+                    this._smallElevChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._smallElevChangedTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._smallElevChangedTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._smallElevChangedTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._smallElevChangedTableAdapter.Adapter);
+                    }
+                }
+                if ((this._pegasChangedTableAdapter != null)) {
+                    revertConnections.Add(this._pegasChangedTableAdapter, this._pegasChangedTableAdapter.Connection);
+                    this._pegasChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._pegasChangedTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._pegasChangedTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._pegasChangedTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._pegasChangedTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -13500,6 +19344,18 @@ SELECT Pegas_id, ИндексЛифта, Грузоподъемность, Ск�
                 if ((this._модельныйРядПегасTableAdapter != null)) {
                     this._модельныйРядПегасTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._модельныйРядПегасTableAdapter]));
                     this._модельныйРядПегасTableAdapter.Transaction = null;
+                }
+                if ((this._freightElevChangedTableAdapter != null)) {
+                    this._freightElevChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._freightElevChangedTableAdapter]));
+                    this._freightElevChangedTableAdapter.Transaction = null;
+                }
+                if ((this._smallElevChangedTableAdapter != null)) {
+                    this._smallElevChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._smallElevChangedTableAdapter]));
+                    this._smallElevChangedTableAdapter.Transaction = null;
+                }
+                if ((this._pegasChangedTableAdapter != null)) {
+                    this._pegasChangedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._pegasChangedTableAdapter]));
+                    this._pegasChangedTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

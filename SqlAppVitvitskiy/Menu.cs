@@ -86,8 +86,14 @@ namespace SqlAppVitvitskiy
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DetailedChangesInTables changes = new DetailedChangesInTables();
+            changes.Show();
+            changes.freightElevChangedDataGridView.AllowUserToAddRows = false;
+            changes.smallElevChangedDataGridView.AllowUserToAddRows = false;
+            changes.pegasChangedDataGridView.AllowUserToAddRows = false;
             History history = new History();
             history.Show();
+           
         }
 
         private void label9_Click(object sender, EventArgs e)

@@ -48,3 +48,4 @@ C:\Users\-\OneDrive\Рабочий стол\SqlAppVitvitskiy\SqlAppVitvitskiy\ob
 C:\Users\-\OneDrive\Рабочий стол\SqlAppVitvitskiy\SqlAppVitvitskiy\obj\Debug\SqlAppVitvitskiy.PegasImport.resources
 C:\Users\-\OneDrive\Рабочий стол\SqlAppVitvitskiy\SqlAppVitvitskiy\obj\Debug\SqlAppVitvitskiy.SmallFreightElevatorImport.resources
 C:\Users\-\OneDrive\Рабочий стол\SqlAppVitvitskiy\SqlAppVitvitskiy\obj\Debug\SqlAppVitvitskiy.History.resources
+C:\Users\-\OneDrive\Рабочий стол\SqlAppVitvitskiy\SqlAppVitvitskiy\obj\Debug\SqlAppVitvitskiy.DetailedChangesInTables.resources
